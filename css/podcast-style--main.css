@@ -1,0 +1,40 @@
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap'); */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--fuente-principal: "IBM Plex Mono", monospace;
+	--fuente-titulo: "IBM Plex Sans", sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: var(--fuente-principal);
+}
+
+.font {
+	font-size: 1.25em;
+}
+
+.font.normal {
+	font-family: var(--fuente-principal);
+}
+.font.negrita {
+	font-family: var(--fuente-principal);
+	font-weight: bold;
+}
+.font.sans-normal {
+	font-family: var(--fuente-titulo);
+}
+.font.sans-negrita {
+	font-family: var(--fuente-titulo);
+	font-weight: bold;
+}
