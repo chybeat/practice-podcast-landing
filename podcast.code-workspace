@@ -1,8 +1,25 @@
 {
 	"folders": [
 		{
+			"name": "root",
 			"path": "."
+		},
+		{
+			"name": "Scss Files",
+			"path": "./.dev/scss"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveSassCompile.settings.formats": [
+			{
+				"format": "expanded",
+				"extensionName": ".css",
+				"savePath": "~/../../css",
+				"savePathReplacementPairs": null
+			}
+		],
+		"liveSassCompile.settings.watchOnLaunch": true,
+		"liveSassCompile.settings.generateMap": false,
+		"liveServer.settings.multiRootWorkspaceName": "root"
+	}
 }

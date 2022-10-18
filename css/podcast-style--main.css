@@ -1,40 +1,303 @@
 /* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap'); */
-
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-	--fuente-principal: "IBM Plex Mono", monospace;
-	--fuente-titulo: "IBM Plex Sans", sans-serif;
+  --white: #FFF;
+  --black: #060A24;
+  --fuente-principal: "IBM Plex Mono", monospace;
+  --fuente-titulo: "IBM Plex Sans", sans-serif;
+  --primary-color: #00F3BB;
+  --secondary-color: #0000FE;
+  --secondary-color-dark: #0000A3;
+  --button-background-color--hover: linear-gradient(270deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+  --link-text-decoration--hover: line-through;
+  --link-text-color--active: #060a248f;
 }
 
 html {
-	font-size: 62.5%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-	font-size: 1.6rem;
-	font-family: var(--fuente-principal);
+  padding-top: 3em;
+  font-size: 1.4rem;
+  font-family: var(--fuente-principal);
 }
 
-.font {
-	font-size: 1.25em;
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-family: var(--fuente-titulo);
 }
 
-.font.normal {
-	font-family: var(--fuente-principal);
+a {
+  text-decoration: none;
 }
-.font.negrita {
-	font-family: var(--fuente-principal);
-	font-weight: bold;
+
+body > header {
+  background: #FFF;
+  height: 3em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
 }
-.font.sans-normal {
-	font-family: var(--fuente-titulo);
+body > header .main-logo {
+  padding: 0.5em;
+  height: 3em;
+  width: 3em;
+  display: block;
 }
-.font.sans-negrita {
-	font-family: var(--fuente-titulo);
-	font-weight: bold;
+body > header .main-logo img {
+  background-color: #000;
+  display: block;
+  height: 2em;
+  width: 2em;
+}
+body > header .header-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body > header i {
+  cursor: pointer;
+  display: block;
+  font-size: 1.5em;
+  height: 2em;
+  padding: 0.5em;
+  text-align: center;
+  width: 2em;
+}
+body > header nav {
+  display: none;
+}
+body > header nav ul {
+  background-color: #00F;
+  list-style: none;
+}
+body > header nav ul li a {
+  display: block;
+  padding: 1.25em 1em;
+  color: var(--white);
+}
+body > header nav ul li a:hover {
+  color: var(--black);
+  background-color: #00F3BB;
+}
+body > header .icons {
+  display: block;
+}
+body > header .icons .fa-xmark {
+  display: none;
+}
+body > header #menu-status {
+  display: none;
+}
+body > header #menu-status:checked ~ .icons .fa-bars {
+  display: none;
+}
+body > header #menu-status:checked ~ .icons .fa-xmark {
+  display: block;
+}
+body > header #menu-status:checked ~ nav {
+  display: block;
+  width: 100vw;
+}
+
+button,
+.button {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--black);
+  cursor: pointer;
+  display: block;
+  font-family: var(--fuente-principal);
+  font-size: 1.15em;
+  font-weight: bold;
+  padding: 0.82em 1.64em;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 24em;
+  margin-left: auto;
+  margin-right: auto;
+}
+button:hover,
+.button:hover {
+  background-image: var(--button-background-color--hover);
+  color: #fff;
+}
+
+.episodes {
+  background-image: linear-gradient(290deg, #0000A3, #0000FE);
+  -webkit-clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
+          clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
+  padding: 5em 0.75em 11em;
+}
+.episodes_container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+.episodes > * {
+  flex: 1 100%;
+}
+.episodes_article {
+  width: 100%;
+}
+.episodes_iframe {
+  border-radius: 0.5em;
+  border: none;
+}
+.episodes_title {
+  flex: 1;
+  font-size: 2.5em;
+  margin: 0 0 0.5em;
+}
+
+.main-header {
+  margin: 1.75em auto;
+}
+.main-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+.main-header_paragraph {
+  margin-bottom: 1em;
+  max-width: 31em;
+}
+.main-header_button {
+  width: 100%;
+  margin-top: 2.25em;
+}
+
+.max-1280 {
+  display: block;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.text-colored_blue {
+  color: var(--secondary-color);
+}
+.text-colored_white {
+  color: var(--white);
+}
+
+.text-breaker_mobile {
+  display: block;
+}
+
+.text-responsive_mobile__hidden {
+  display: none;
+}
+.text-responsive_desktop__hidden {
+  display: initial;
+}
+
+@media (min-width: 660px) {
+  body {
+    padding-top: 5em;
+    font-size: 1.6rem;
+  }
+  body > header {
+    height: 5em;
+    flex-wrap: nowrap;
+  }
+  body > header .main-logo {
+    height: 4em;
+    width: 4em;
+    padding: 1em;
+  }
+  body > header nav {
+    padding: 1em 2em 1em 0;
+    display: block;
+  }
+  body > header nav ul {
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+  body > header nav ul li {
+    display: inline-block;
+  }
+  body > header nav ul li a {
+    color: var(--black);
+    padding: 0.5em 0.75em;
+  }
+  body > header .icons {
+    display: none;
+  }
+  body > header #menu-status:checked ~ nav {
+    width: auto;
+  }
+  button,
+.button {
+    padding: 0.85em 4em;
+  }
+  .episodes_article {
+    max-width: 45%;
+  }
+  .episodes_title {
+    flex-basis: 100%;
+  }
+  .main-header_paragraph {
+    max-width: 39em;
+  }
+  .text-breaker_mobile {
+    display: inline;
+  }
+  .text-responsive_mobile__hidden {
+    display: initial;
+  }
+  .text-responsive_desktop__hidden {
+    display: none;
+  }
+}
+@media (min-width: 944px) {
+  body > header nav {
+    padding-right: 8em;
+  }
+  body > header .main-logo {
+    padding-left: 8em;
+  }
+  .button,
+button {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .episodes {
+    padding-top: 6em;
+    -webkit-clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+            clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+    background-image: linear-gradient(90deg, #0000A3, #0000FE);
+  }
+  .main-header {
+    margin-top: 7em;
+  }
+  .main-header h1 {
+    font-size: 4.1em;
+    margin-bottom: 0.2em;
+  }
+  .main-header_button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }

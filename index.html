@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Podcast Channel</title>
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
 		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,23 +15,93 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap"
+	<!--
+		This link tag uses the same font in proyect but the weight is ligther, just with testing purpouses
+		<link
+		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans:wght@300&display=swap"
 		rel="stylesheet">
+-->
+
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@300&display=swap"
+		rel="stylesheet">
+
 	<link rel="stylesheet" href="css/podcast-style--main.css">
 </head>
 
 <body>
 	<header>
-		<img src="./assets/images/logo.svg" alt="logo-del-creador-del-proyecto">
-		<nav>
-			<ul>
-				<li class="font normal">EPISODIOS</li>
-				<li class="font negrita">NOSOTROS</li>
-				<li class="font sans-normal">ENTREVISTAS</li>
-				<li class="font sans-negrita">TÓPICOS</li>
-			</ul>
-		</nav>
+		<div class="header-container max-1280">
+			<a class="main-logo" href="https://chybeat.github.io/practice-podcast" title="visitar la página inicial">
+				<img src="./assets/images/logo.svg" alt="logo-del-creador-del-proyecto">
+			</a>
+			<input type="checkbox" id="menu-status">
+			<label class="icons" for="menu-status">
+				<i class="fa-solid fa-bars"></i>
+				<i class="fa-solid fa-xmark"></i>
+			</label>
+			<nav>
+				<ul>
+					<li><a title="Escucha los episodios" href="#episodes">EPISODIOS</a></li>
+					<li><a title="Conocenos" href="#">NOSOTROS</a></li>
+					<li><a title="Escucha las entrevistas" href="#">ENTREVISTAS</a></li>
+					<li><a title="" href="#">TÓPICOS</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
+	<main>
+		<header class="main-header">
+			<div class="main-header_container max-1280">
+				<h1>
+					<span class="text-breaker_mobile">Hello <del>world</del></span>
+					<span class="text-breaker_mobile">pale blue dot
+						<span class="text-responsive_mobile__hidden">
+							<span class="text-colored_blue">.</span>
+						</span>
+						<span class="text-responsive_desktop__hidden">.</span>
+					</span>
+				</h1>
+				<p class="main-header_paragraph">
+					<span class="text-responsive_mobile__hidden">El portal de podcasts</span>
+					<span class="text-responsive_desktop__hidden">Un podcast</span>
+					que explora el mundo de la programación<span class="text-responsive_mobile__hidden"> y
+						la tecnología</span>. Nuevos episodios, todos los
+					jueves cada 15 días
+				</p>
+				<a href="#episodes" class="button main-header_button">conocé más</a>
+			</div>
+		</header>
+		<section id="episodes" class="episodes">
+			<div class="episodes_container">
+				<h2 class="episodes_title text-colored_white"><span class="max-1280">Episodios</span></h2>
+				<article class="episodes_article">
+					<iframe class="episodes_iframe"
+						src="https://open.spotify.com/embed/episode/7AZZy2nJ4R9ZndHW0h2yxt?theme=0&t=0" width="100%"
+						height="352">
+					</iframe>
+				</article>
+				<article class="episodes_article">
+					<iframe class="episodes_iframe" src="https://open.spotify.com/embed/episode/2Hn8oHQ3EgVTtg8ysqfZco?t=0"
+						height="352" width="100%" frameBorder="0">
+					</iframe>
+				</article>
+				<article class="episodes_article">
+					<iframe class="episodes_iframe"
+						src="https://open.spotify.com/embed/episode/3cWta1iiQSfvrdHaCbLkSD?theme=0&t=0" width="100%"
+						height="352" frameBorder="0">
+					</iframe>
+				</article>
+				<article class="episodes_article">
+					<iframe class="episodes_iframe" src="https://open.spotify.com/embed/episode/31VyAQAwBiKoHVoYUCEzjQ?&t=0"
+						width="100%" height="352" frameBorder="0">
+					</iframe>
+				</article>
+			</div>
+		</section>
+		<section>
+			<h2>¿Querés las últimas novedades?</h2>
+		</section>
+	</main>
 </body>
 
 </html>
