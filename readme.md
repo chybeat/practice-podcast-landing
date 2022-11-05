@@ -1,11 +1,7 @@
 # Podcast Channel [HTML /CSS project]
 
-## To Do
-
--  Change the pdf link in this readme to only download/preview, whatever easy be
-
-[spa]
-Este es mi primer proyecto de practica con tros desarrolladores/estudiantes. La finalidad es realizar una página teniendo en cuenta los requisitos que se encuentran en el archivo assets/pdf/Podcast-Channel-Requirements.pdf y en la carpeta 'sources' se pueden encontrar los recursos de la interfaz con información más específica.
+[Esp]
+Este es mi primer proyecto de practica con otros desarrolladores/estudiantes. La finalidad es realizar una página teniendo en cuenta los requisitos que se encuentran en el archivo [Podcast-Channel-Requirements.pdf](https://chybeat.github.io/practice-podcast-landing/source/Podcast-Channel-Requirements.pdf). En la carpeta landingUI_desktop_mobile_kit dentro de sources encontrarás una interfaz con información más específica del protecto, la cual puedes ver desde [aqui](https://chybeat.github.io/practice-podcast-landing/source/landingUI_desktop_mobile_kit/index.html).
 
 [eng]
-This is the my first project in practice with other developers/students. The goal is develop a landing page with some requierements you can find in file assets/pdf/Podcast-Channel-Requirements.pdf, there you can find a downloable UI sources whit more specific information and 'source' folder contains the resources with information about the project.
+This is my first project in practice with other developers/students. The goal is develop a landing page with some requierements you can find in file [Podcast-Channel-Requirements.pdf](https://chybeat.github.io/practice-podcast-landing/source/Podcast-Channel-Requirements.pdf). In "landingUI_desktop_mobile_kit" on sources folder you can find an UI whit more specific information, can see live UI requirements in this [link](https://chybeat.github.io/practice-podcast-landing/source/landingUI_desktop_mobile_kit/index.html).
