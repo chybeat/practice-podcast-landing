@@ -8,6 +8,6 @@ Este es mi primer proyecto de práctica con otros desarrolladores/estudiantes. L
 
 [Eng]
 
-To view the finished project [click here](https://chybeat.github.io/practice-podcast-landing/)
+To view the finished project live [click here](https://chybeat.github.io/practice-podcast-landing/)
 
 This is my first project in practice with other developers/students. The goal was to develop a landing page with some requierements you can find in file [Podcast-Channel-Requirements.pdf](https://chybeat.github.io/practice-podcast-landing/source/Podcast-Channel-Requirements.pdf). In "landingUI_desktop_mobile_kit" on sources folder you can find an UI whit more specific information, can see live UI requirements in this [link](https://chybeat.github.io/practice-podcast-landing/source/landingUI_desktop_mobile_kit/index.html).
